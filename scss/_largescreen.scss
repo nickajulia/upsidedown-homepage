@@ -1,0 +1,19 @@
+//_largecreen.scss
+
+// large screens
+@media only screen and (min-width: 64.063em) {
+
+.header {
+	//height: em(500);
+	background-size: cover;
+	min-height: 800px;
+}
+
+.button-wrap a {
+width:50%;
+}
+
+
+
+
+  } /* min-width 641px, medium screens */

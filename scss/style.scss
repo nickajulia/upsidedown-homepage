@@ -1,0 +1,409 @@
+@import "foundation";
+
+
+/*--- Variables --*/
+
+
+
+
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+$headerBgTop: #2BC253;
+$headerBgBtm: #50CF71;
+$logoPop:#38A053;
+$headerText: #F2FDFE;
+$buttonBg:#FF8212;
+$buttonBgHover:#FF7800;
+$buttonBorder:#ff8046;
+$buttonBorderHover:#FF7800;
+$bodyFont: 'Merriweather', serif;
+
+html, body {
+	margin:0px;
+	
+	color:#363636;
+}
+
+p, li {
+	margin:0px 0px 1em 0px;
+	font-family: $bodyFont;
+	font-size: 19px;
+font-weight: 300;
+line-height: 32px;
+
+}
+
+.container {
+	max-width:1160px;
+	padding:0px 20px;
+	margin:0px auto;
+}
+
+.header {
+	padding:1em 0px 2em;
+	//background: $headerBgTop url('');
+	//background-image: linear-gradient(rgba(14,156,167,0.8), rgba(14,156,167,0.8)), url('../img/heroBg.jpg');
+	background-color: #0E9CA7;
+	background-image: url('../img/heroBg3.jpg') ;
+	background-blend-mode: soft-light;
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+  	background-attachment: scroll;
+
+}
+
+.logo {
+	max-width:33%;
+	margin-bottom:.5em;
+	float:left;
+	color: #ffffff !important;
+	text-decoration: none;
+	font-size: em(35);
+	display: none;
+	&:hover{
+		text-decoration: none;
+	}
+
+}
+.logoGreen
+{
+	color:$logoPop;
+}
+
+.logo img {
+	max-width:100%;
+	width:auto;
+	height:auto;
+}
+
+.header-image {
+	text-align:center;
+	margin-bottom:1em;
+	float:left;
+	width:100%;
+	//display: none;
+}
+
+.header-with-logo .header-image img {
+	max-height:250px;
+}
+
+.header-image img {
+	max-width:100%;
+	width:auto;
+	height:auto;
+	display: none;
+}
+
+.header-title {
+	font-size:3em;
+	margin-bottom:0.5em;
+	font-weight:bold;
+	text-align:center;
+	padding:0px 10px;
+	color:#fffffd;
+	clear:both;
+	font-family: 'Raleway', sans-serif;
+}
+
+.header-text {
+	font-size:1.5em;
+	line-height:1.5em;
+	text-align:center;
+	margin-bottom:0.5em;
+	color:$headerText;
+	padding:0px 10px;
+}
+
+.header a {
+	color:#fff10e;
+	font-weight:bold;
+}
+
+.newsletter-form {
+	text-align:center;
+	padding:0px 10px;
+}
+
+.button-wrap {
+	text-align:center;
+	  text-align: center;
+
+  margin: auto;
+
+}
+
+.button-wrap a {
+	
+	margin:0px;
+	border:0px;
+	padding:1.025em 2em 1em 2em;
+	background:$buttonBg;
+	display:inline-block;
+	color:#fffffa!important;
+	font-size: em(22);
+	font-weight:normal;
+	line-height:1em;
+	box-sizing:border-box;
+	vertical-align:middle;
+	cursor:pointer;
+	margin-top:0.5em;
+	text-decoration:none;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	text-transform:uppercase;
+	border: solid 2px $buttonBorder;
+	white-space: normal;
+	 transition: all 0.5s ease;
+
+	&:hover{
+		background:$buttonBgHover ;
+		transform: scale(1.1);
+	}
+}
+
+.newsletter-button-wrap a:hover {
+	color:#fffffb!important;
+	transition: all 0.25s ease;
+
+
+}
+
+.newsletter-form-description {
+	font-size:calc(15px);
+	line-height:1.5em;
+	font-style:italic;
+	text-align:center;
+	color:$headerText;
+	margin:1.5em auto;
+	display:block;
+	padding:0px 10px;
+	max-width:660px;
+}
+
+.featured {
+	background:#fffffe;
+	padding:1em 0px;
+	border-bottom:4px solid #ebebeb;
+}
+
+.featured-title {
+	text-align:center;
+	font-size:1em;
+	margin-bottom:1em;
+	font-family: 'Raleway', sans-serif;
+}
+
+.featuredImage {
+	height: 75px;
+}
+
+.featured-image img {
+	max-width:100%;
+	height:auto;
+}
+
+
+
+.main {
+	background:#fffffe;
+	padding:3.75em 0px;
+}
+.featuredList{
+	filter:grayscale(100%);
+	 display: flex;
+  align-items: center;
+  justify-content: center;
+
+  li{
+  	text-align: center;
+  }
+}
+
+
+
+.block {
+	margin-top:3em;
+	margin-bottom:2em ;
+}
+
+.block:first-child {
+	margin-top:0!important;
+}
+
+.block:last-child {
+	margin-bottom:0!important;
+}
+
+.block-title {
+	font-size:1.75em;
+	font-weight:bold;
+	margin-bottom:0.75em;
+	font-family: 'Raleway', sans-serif;
+}
+
+.block-text {
+	font-size:1.15em;
+	line-height:1.5em;
+}
+
+.block.testimonial-block {
+	margin:3em 0px ;
+	border:4px solid #aedcff;
+	padding:2em;
+	overflow:hidden;
+}
+
+.testimonial-image {
+	float:left;
+	width:7.25em;
+	height:7.25em;
+	overflow:hidden;
+	-webkit-border-radius:3.625em;
+	-moz-border-radius:3.625em;
+	border-radius:3.625em;
+}
+
+.testimonial-image img {
+	width:100%;
+	height:auto;
+}
+
+.testimonial-content {
+	margin-left:7.25em;
+	padding:0.75em 0px 1em 1.2em;
+}
+
+.testimonial-text {
+	font-size:1.25em;
+	line-height:1.5em;
+	margin-bottom:1.1em;
+}
+
+.testimonial-author  {
+	font-size:1em;
+	font-weight:bold;
+}
+
+.testimonial-author a {
+	color:#0365c1;
+}
+
+.main .container {
+	max-width:760px;
+}
+
+.footer {
+	padding:5em 0px 4em;
+	//background: $headerBgTop url('');
+	background-image: linear-gradient(rgba(14,156,167,0.8), rgba(14,156,167,0.8)), url('');
+}
+
+
+.footer-image {
+	text-align:center;
+	margin-bottom:3em;
+}
+
+.footer-image img {
+	max-width:100%;
+	width:auto;
+	height:auto;
+}
+
+.footer-title {
+	font-size:2em;
+	margin-bottom:0.5em;
+	font-weight:bold;
+	text-align:center;
+	padding:0px 10px;
+	color:#fffffd;
+}
+
+.footer-text {
+	font-size:1.25em;
+	line-height:1.5em;
+	text-align:center;
+	margin-bottom:1em;
+	color:$headerText;
+	padding:0px 10px;
+}
+
+.footer a {
+	color:#fff10e;
+	font-weight:bold;
+}
+
+#button-colors {
+	display:none;
+	border-left-color:#ff8041;
+	border-right-color:#ff8042;
+	border-top-color:#ff8043;
+	border-bottom-color:#ff8044;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:780px){
+
+	html,body {
+		font-size:14px;
+	}
+}
+
+@media (max-width:480px){
+
+	html,body {
+		font-size:12px;
+	}
+
+	.header {
+		padding-top:1em;
+		padding-bottom:2em;
+	}
+
+	.main {
+		padding:2em 0px;
+	}
+
+	.block {
+		margin-top:2em;
+		margin-bottom:1.5em ;
+	}
+
+	.block.testimonial-block {
+		margin:2em 0px ;
+	}
+
+	.footer {
+		padding-top:2em;
+		padding-bottom:1em;
+	}
+	
+	.testimonial-image {
+		width:5em;
+		height:5em;
+		-webkit-border-radius:2.5em;
+		-moz-border-radius:2.5em;
+		border-radius:2.5em;
+	}
+
+	.testimonial-content {
+		margin-left:5em;
+	}
+}
+
+@import 'mediumscreen';
+@import 'largescreen';
+@import 'XLargecreen';

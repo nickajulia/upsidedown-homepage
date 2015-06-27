@@ -1,0 +1,24 @@
+//_mediumscreen.scss
+
+// Medium screens
+@media only screen and (min-width: 40.063em) { 
+
+.header {
+	background-size: cover;
+	
+}
+
+.header-title {
+	font-size: 4em;
+	}
+
+	.header-text {
+		font-size: 2.5em
+	}
+
+
+.button-wrap a {
+font-size: em(25)
+}
+
+  } /* min-width 641px, medium screens */

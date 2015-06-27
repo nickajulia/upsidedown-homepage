@@ -1,0 +1,372 @@
+{
+    "id": "Ultimate Welcome Gate",
+    "name": "Ultimate Welcome Gate",
+    "mobile": true,
+    "notes": "1.04",
+    "syntax": 4,
+    "version": 1.04,
+    "style": {
+        "replacements": [
+            {
+              "type": "color",
+              "name": "Header & Footer -Background Color",
+              "find": "#2BC253"
+            },
+            {
+              "type": "color",
+              "name": "Header & Footer - Title",
+              "find": "#fffffd"
+            },
+            {
+              "type": "color",
+              "name": "Header & Footer - Link Color",
+              "find": "#fff10e"
+            },
+            {
+              "type": "color",
+              "name": "Header & Footer - Text Color",
+              "find": "#E3FCEA"
+            },
+            {
+              "type": "color",
+              "name": "Main Background",
+              "find": "#FFFFFE"
+            },
+            {
+              "type": "color",
+              "name": "Text Color",
+              "find": "#363636"
+            },
+            {
+              "type": "color",
+              "name": "Featured Bottom Border Color",
+              "find": "#ebebeb"
+            },
+            {
+              "type": "color",
+              "name": "Testimonial Link Color",
+              "find": "#0365c1"
+            },
+            {
+              "type": "color",
+              "name": "Testimonial Border Color",
+              "find": "#aedcff"
+            },
+            {
+              "type": "color",
+              "name": "Button - Text Color",
+              "find": "#fffffa"
+            },
+            {
+              "type": "color",
+              "name": "Button - Gradient Top Color",
+              "find": "#ff8043"
+            },
+            {
+              "type": "color",
+              "name": "Button - Gradient Bottom Color",
+              "find": "#ff8044"
+            },
+            {
+              "type": "color",
+              "name": "Hover Button - Text Color",
+              "find": "#fffffb"
+            },
+            {
+              "type": "color",
+              "name": "Button Hover - Gradient Top Color",
+              "find": "#ff8041"
+            },
+            {
+              "type": "color",
+              "name": "Button Hover - Gradient Bottom Color",
+              "find": "#ff8042"
+            }
+        ]
+    },
+    "variables": {},
+    "form": {},
+    "elements": [
+        
+
+
+
+ 
+        {
+            "id": "block02Img", 
+            "name": "Text block 2 image", 
+            "type": "image"
+        },
+
+
+
+
+
+        {
+            "id": "header-image", 
+            "name": "Header image", 
+            "type": "image"
+        },
+        {
+            "id": "header-title", 
+            "name": "Header Title", 
+            "type": "text"
+        },
+        {
+            "id": "header-text", 
+            "name": "Header Text", 
+            "type": "text"
+        },
+        {
+            "id": "header-button", 
+            "name": "Header Button", 
+            "type": "link",
+            "data": {
+                "href": "#/optin"
+            }
+        },
+        {
+            "id": "header-privacy-text", 
+            "name": "Header Privacy Text", 
+            "type": "text"
+        },
+         {
+            "id": "featuredBlockGrid", 
+            "name": "Featured Title", 
+            "type": "container"
+        },
+        {
+            "id": "featured-title", 
+            "name": "Featured Title", 
+            "type": "text"
+        },
+        {
+            "id": "featured-image1", 
+            "name": "Featured Image1", 
+            "type": "image"
+        },
+        {
+            "id": "featured-image2", 
+            "name": "Featured Image2", 
+            "type": "image"
+        },
+        {
+            "id": "featured-image3", 
+            "name": "Featured Image3", 
+            "type": "image"
+        },
+        {
+            "id": "featured-image4", 
+            "name": "Featured Image4", 
+            "type": "image"
+        },
+        {
+            "id" : "block01",
+            "name" : "Text Block #1",
+            "type" : "container"
+        },
+        {
+            "id" : "block01title",
+            "name" : "Text Block #1 Title",
+            "type" : "text"
+        },
+        {
+            "id" : "block01text",
+            "name" : "Text Block #1 Text",
+            "type" : "text"
+        },
+        {
+            "id" : "block02",
+            "name" : "Text Block #2",
+            "type" : "container"
+        },
+        {
+            "id" : "block02title",
+            "name" : "Text Block #2 Title",
+            "type" : "text"
+        },
+        {
+            "id" : "block02text",
+            "name" : "Text Block #2 Text",
+            "type" : "text"
+        },
+        {
+            "id" : "tblock01",
+            "name" : "Testimonial Block #1",
+            "type" : "container"
+        },
+        {
+            "id" : "tblock01image",
+            "name" : "Testimonial Block #1 Image",
+            "type" : "image"
+        },
+        {
+            "id" : "tblock01text",
+            "name" : "Testimonial Block #1 Text",
+            "type" : "text"
+        },
+        {
+            "id" : "tblock01author",
+            "name" : "Testimonial Block #1 Author",
+            "type" : "text"
+        },
+        {
+            "id" : "block03",
+            "name" : "Text Block #3",
+            "type" : "container"
+        },
+         {
+            "id" : "block3Video",
+            "name" : "Text Block #3 Video",
+            "type" : "video"
+        },
+        {
+            "id" : "block03title",
+            "name" : "Text Block #3 Title",
+            "type" : "text"
+        },
+        {
+            "id" : "block03text",
+            "name" : "Text Block #3 Text",
+            "type" : "text"
+        },
+        {
+            "id" : "block03text2",
+            "name" : "Text Block #3 Text 2",
+            "type" : "text"
+        },
+        {
+            "id" : "block03Li1",
+            "name" : "Text Block #3 list 1",
+            "type" : "text"
+        },
+         {
+            "id" : "block03Li2",
+            "name" : "Text Block #3 list 2",
+            "type" : "text"
+        },
+        {
+            "id" : "block04",
+            "name" : "Text Block #4",
+            "type" : "container"
+        },
+        {
+            "id" : "block04title",
+            "name" : "Text Block #4 Title",
+            "type" : "text"
+        },
+        {
+            "id" : "block04text",
+            "name" : "Text Block #4 Text",
+            "type" : "text"
+        },
+        {
+            "id" : "tblock02",
+            "name" : "Testimonial Block #2",
+            "type" : "container"
+        },
+        {
+            "id" : "tblock02image",
+            "name" : "Testimonial Block #2 Image",
+            "type" : "image"
+        },
+        {
+            "id" : "tblock02text",
+            "name" : "Testimonial Block #2 Text",
+            "type" : "text"
+        },
+        {
+            "id" : "tblock02author",
+            "name" : "Testimonial Block #2 Author",
+            "type" : "text"
+        },
+        {
+            "id" : "block05",
+            "name" : "Text Block #5",
+            "type" : "container"
+        },
+        {
+            "id" : "block05title",
+            "name" : "Text Block #5 Title",
+            "type" : "text"
+        },
+        {
+            "id" : "tblock03",
+            "name" : "Testimonial Block #3",
+            "type" : "container"
+        },
+        {
+            "id" : "tblock03image",
+            "name" : "Testimonial Block #3 Image",
+            "type" : "image"
+        },
+        {
+            "id" : "tblock03text",
+            "name" : "Testimonial Block #3 Text",
+            "type" : "text"
+        },
+        {
+            "id" : "tblock03author",
+            "name" : "Testimonial Block #3 Author",
+            "type" : "text"
+        },
+        {
+            "id" : "block05text",
+            "name" : "Text Block #5 Text",
+            "type" : "text"
+        },
+        {
+            "id" : "block06",
+            "name" : "Text Block #6",
+            "type" : "container"
+        },
+        {
+            "id" : "block06title",
+            "name" : "Text Block #6 Title",
+            "type" : "text"
+        },
+        {
+            "id" : "block06text",
+            "name" : "Text Block #6 Text",
+            "type" : "text"
+        },
+        {
+            "id" : "block07",
+            "name" : "Read More Button Block",
+            "type" : "container"
+        },
+        {
+            "id" : "read-blog-button",
+            "name" : "Read More Button",
+            "type" : "link"
+        },
+        {
+            "id": "footer-image", 
+            "name": "Footer image", 
+            "type": "image"
+        },
+        {
+            "id": "footer-title", 
+            "name": "Footer Title", 
+            "type": "text"
+        },
+        {
+            "id": "footer-text", 
+            "name": "Footer Text", 
+            "type": "text"
+        },
+        {
+            "id": "footer-button", 
+            "name": "Footer Button",  
+            "type": "link",
+            "data": {
+                "href": "#/optin"
+            }
+        },
+        {
+            "id": "footer-privacy-text", 
+            "name": "Footer Privacy Text", 
+            "type": "text"
+        }
+    ]
+}
